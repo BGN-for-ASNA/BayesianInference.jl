@@ -1,4 +1,4 @@
-module BayesianInference
+module pyBayesianInference
 
 using PythonCall
 using CondaPkg
@@ -371,5 +371,6 @@ function __init__()
     PythonCall.pycopy!(jnp.py, pyimport("jax.numpy"))
     PythonCall.pycopy!(jax.py, pyimport("jax"))
 end
+
 
 end
